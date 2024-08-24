@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#add-achievement-form,
+#add-certificate-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+#add-achievement-form input,
+#add-achievement-form textarea,
+#add-certificate-form input,
+#add-certificate-form textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#add-achievement-form button,
+#add-certificate-form button {
+    margin-top: 10px;
+}
+
+.achievement,
+.certificate {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.achievement img,
+.certificate img {
+    max-width: 200px;
+    height: auto;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}

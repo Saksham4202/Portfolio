@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Saksham Rajput</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated and passionate B.Tech graduate in Information Technology from [ABES Engineering College, with a strong foundation in C/C++, DSA, SQL,Python,HTML,CSS,Javascript.
+             I have a keen interest in Web Development,Software Development and am eager to apply my knowledge and skills to real-world challenges.</p>
+    </section>
+
+    <section id="work">
+        <h2>Project/Work</h2>
+        <p>Youtube Clone (01/2022 - 03/2022) <br>
+              Technology: HTML ,CSS, Javascript <br>
+              Description: It is an effacious video-sharing solution that
+              aids you in launching your video streaming software that
+              has the power to rival Youtube itself. We can create our
+              own videos and content and manipulate ourself. This
+              video sharing script has a feature-packed admin panel
+              and offers multiple input formats to support users. </p>
+        <p>Heart Disease Detection System
+            (10/2023 - 04/2024) <br>
+           Technology: Python, Data Science, ML<br> 
+           Description: The core aim is to develop a predictive
+            model with the capacity to accurately pinpoint potential
+            instances of heart disease using medical data. The
+            overarching goal is to enhance diagnostic precision,
+            particularly through early detection, thereby enabling
+            timely interventions for improved patient outcomes. </p>      
+        </h2>      
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <button onclick="showAddAchievementForm()">Add Achievement</button>
+        <div id="achievement-list">
+            <!-- Achievements will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <button onclick="showAddCertificateForm()">Add Certificate</button>
+        <div id="certificate-list">
+            <!-- Certificates will be dynamically added here -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p><ol>C++</ol>
+        <ol>Python</ol>
+        <ol>DSA</ol>
+        <OL>SQL</OL>
+        <OL>HTML</OL>
+        <OL>CSS</OL>
+        <OL>JavaScript</OL>
+</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <ol><label for="name">Name: Saksham Rajput</label></ol>
+            
+            
+           <ol><label for="email">Email:<a href="mailto:rajputsaksham7@gmail.com">rajputsaksham7@gmail.com</a>
+           </label></ol>
+            
+           <ol><label for="number">Mobile no: 8948683597</label></ol>
+            
+        </form>
+    </section>
+
+    <!-- Add/Edit Achievement Form -->
+    <div id="add-achievement-form" style="display:none;">
+        <h2 id="form-title">Add New Achievement</h2>
+        <label for="achievement-title">Title:</label>
+        <input type="text" id="achievement-title">
+        
+        <label for="achievement-description">Description:</label>
+        <textarea id="achievement-description"></textarea>
+        
+        <button onclick="saveAchievement()">Save Achievement</button>
+        <button onclick="hideAddAchievementForm()">Cancel</button>
+    </div>
+
+    <!-- Add/Edit Certificate Form -->
+    <div id="add-certificate-form" style="display:none;">
+        <h2 id="certificate-form-title">Add New Certificate</h2>
+        <label for="certificate-title">Title:</label>
+        <input type="text" id="certificate-title">
+        
+        <label for="certificate-description">Description:</label>
+        <textarea id="certificate-description"></textarea>
+        
+        <label for="certificate-image">Image:</label>
+        <input type="file" id="certificate-image" accept="image/*">
+        
+        <button onclick="saveCertificate()">Save Certificate</button>
+        <button onclick="hideAddCertificateForm()">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
